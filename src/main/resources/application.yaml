@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: PedidosBajoControl
+  r2dbc:
+    url: r2dbc:h2:mem:///pedidosbajocontrol;MODE=PostgreSQL;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=FALSE
+    username: sa
+    password: 
+  sql:
+    init:
+      mode: always
+
+server:
+  port: 8080
